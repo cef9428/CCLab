@@ -1,0 +1,227 @@
+h1  {
+  color:black;
+  font-family: helvetica;
+}
+
+.songTitle{
+  font-size: 50px;
+  font-family: 'Merriweather', serif;
+}
+.artist{
+  font-size: 30px;
+}
+#cool{
+  font-family: papyrus;
+}
+.lang{
+  text-align:left;
+  z-index: auto;
+}
+body{
+  margin: 0;
+  background-color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+p{
+  font-size: 20px;
+  /* border-style:double; */
+}
+.fun{
+  border: 2px black;
+  width: 300px;
+  margin: auto;
+  border: inset;
+  background-color: white;
+  animation-name: test;
+  animation-duration: 5s;
+}
+@keyframes test {
+  from{background-color: black;}
+  to{background-color: white;}
+}
+@keyframes text {
+  from{background-color: white;}
+  to{background-color: black;}
+}
+.hello{
+  width: 300;
+  height: 100%;
+  background-color: white;
+  animation-name: test;
+  animation-duration: 5s;
+}
+.home{
+  background-color: white;
+  /* animation: test 5s linear infinite; */
+  /* animation-duration: 5s; */
+  /* animation-iteration-count: 10; */
+}
+.test{
+  font-family: helvetica;
+  color: transparent;
+  animation: text 5s linear infinite;
+}
+.white {
+  background: white;
+  border: 1px solid black;
+}
+.curve{
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+}
+.curve::before{
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 70%;
+  width: 55%;
+  height: 100%;
+  background-color: black;
+  transform: translate(85%,68%);
+  /* z-index: +1; */
+}
+.curve::after{
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 80%;
+  width: 55%;
+  height: 100%;
+  background-color: white;
+  transform: translate(-3%,32%);
+  z-index: 1;
+}
+.intro{
+  font-size: 50px;
+  color: white;
+  font-family: helvetica;
+  background: black;
+}
+.intro2{
+  font-size: 50px;
+  font-family: helvetica;
+  background: white;
+}
+.big{
+  font-size: 50px;
+  z-index: 2;
+}
+section{
+  position: relative;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 100px 20vw;
+
+}
+.red{
+  background: white;
+}
+.front{
+  width: 300px;
+  z-index: 2;
+  font-family: 'Merriweather', serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+*{
+  box-sizing: border-box;
+}
+img{
+  width:200px;
+}
+@keyframes fall {
+  0% {top: -400px; left: 0px}
+  100% {top: 0px; left: 0px}
+}
+@keyframes left {
+  0% {top: 0px; left: -200px}
+  100% {top: 0px; left: 0px}
+}
+@keyframes right {
+  0% {top: 0px; right: -200px}
+  100% {top: 0px; right: 0px}
+}
+.pic{
+  position: relative;
+  animation-name: fall;
+  animation-duration: 5s;
+}
+.box{
+  background: black;
+  border-width: 2px;
+  border-style: outset;
+  border-radius: 20%;
+  animation-name: right 5s linear 1;
+  width: 120px;
+}
+#german{
+  color: white;
+}
+#english{
+  color: white;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.black{
+  background: black;
+  color: black;
+}
+.blackback{
+  background: black;
+}
+.ball{
+  border-radius: 100%;
+  background: white;
+  width: 50%;
+  height: 100%;
+}
+.left{
+  text-align: left;
+  font-size: 20px;
+}
+.albums{
+  width: 100px;
+}
+.curve2{
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+}
+.curve2::before{
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 70%;
+  width: 55%;
+  height: 100%;
+  background-color: white;
+  transform: translate(85%,68%);
+  /* z-index: +1; */
+}
+.curve2::after{
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 80%;
+  width: 55%;
+  height: 100%;
+  background-color: black;
+  transform: translate(-3%,32%);
+  z-index: 1;
+}
+.zfront{
+  z-index: 2;
+}

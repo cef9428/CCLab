@@ -1,0 +1,13 @@
+body{
+  background: red;
+  /* animation: backgroundFade 5s infinite; */
+}
+@keyframes backgroundFade {
+  0%{background-color: red;}
+  50%{background-color: orange;}
+  100%{background-color: red;}
+}
+.big{
+  font-size: 50px;
+  color: blue;
+}

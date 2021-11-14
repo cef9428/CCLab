@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  align-items: center;
+  justify-content: center;
+}
+.text{
+  color: red;
+  border: 1px dotted red;
+  margin: 0;
+}
+.box1{
+  animation-name: fun;
+  width: 150px;
+  animation-duration: 5s;
+  position: relative;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+}
+.box2{
+  animation-name: fun2;
+  width: 150px;
+  animation-duration: 5s;
+  position: relative;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+}
+.right {
+  align-items: center;
+}
+@keyframes fun {
+  0%{left:-50%; transform: rotate(0deg);}
+  50%{left:50%;transform: rotate(180deg);}
+  100%{left:0; transform: rotate(0deg);}
+}
+@keyframes fun2 {
+  0%{right:-100%; transform: rotate(0deg);}
+  50%{right:0;transform: rotate(180deg);}
+  100%{right:-100%; transform: rotate(0deg);}
+}
