@@ -12,51 +12,70 @@ body{
   color: blue;
 }
 .flexible{
-  height: 800px;
+  /* height: 800px; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 #one{
+  /* margin: auto; */
+  position: relative;
   background: blue;
   width: 400px;
   height: 200px;
 }
 #two{
+  /* margin: auto; */
+  position: relative;
   background: red;
   width: 400px;
   height: 200px;
 }
 #three{
+  /* margin: auto; */
+  position: relative;
   background: orange;
   width: 400px;
   height: 200px;
 }
 #four{
+  /* margin: auto; */
+  position: relative;
   background: green;
   width: 400px;
   height: 200px;
 }
 #five{
+  /* margin: auto; */
+  position: relative;
   background: black;
   width: 400px;
   height: 200px;
 }
 #six{
+  /* margin: auto; */
+  position: relative;
   background: white;
   width: 400px;
   height: 200px;
 }
 #seven{
+  /* margin: auto; */
+  position: relative;
   background: pink;
   width: 400px;
   height: 200px;
 }
 #eight{
+  /* margin: auto; */
+  position: relative;
   background: purple;
   width: 400px;
   height: 200px;
 }
 #nine{
+  /* margin: auto; */
+  position: relative;
   background: yellow;
   width: 400px;
   height: 200px;
