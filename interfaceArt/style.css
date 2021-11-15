@@ -1,5 +1,5 @@
 body{
-  background: red;
+  background: dimgrey;
   /* animation: backgroundFade 5s infinite; */
 }
 @keyframes backgroundFade {
@@ -10,4 +10,54 @@ body{
 .big{
   font-size: 50px;
   color: blue;
+}
+.flexible{
+  height: 800px;
+  display: flex;
+  justify-content: space-around;
+}
+#one{
+  background: blue;
+  width: 400px;
+  height: 200px;
+}
+#two{
+  background: red;
+  width: 400px;
+  height: 200px;
+}
+#three{
+  background: orange;
+  width: 400px;
+  height: 200px;
+}
+#four{
+  background: green;
+  width: 400px;
+  height: 200px;
+}
+#five{
+  background: black;
+  width: 400px;
+  height: 200px;
+}
+#six{
+  background: white;
+  width: 400px;
+  height: 200px;
+}
+#seven{
+  background: pink;
+  width: 400px;
+  height: 200px;
+}
+#eight{
+  background: purple;
+  width: 400px;
+  height: 200px;
+}
+#nine{
+  background: yellow;
+  width: 400px;
+  height: 200px;
 }
