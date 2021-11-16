@@ -1,5 +1,6 @@
 body{
   background: dimgrey;
+  text-align: center;
   /* animation: backgroundFade 5s infinite; */
 }
 @keyframes backgroundFade {

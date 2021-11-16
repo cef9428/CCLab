@@ -13,8 +13,8 @@ let co;
 let cl;
 let cr;
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  //canvas.parent('one');
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.parent('1');
   background(255);
 
 }
