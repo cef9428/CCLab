@@ -1,91 +1,40 @@
-// Start by clicking on the box in the top left
-//q = Black, w = White, e = Blue, r = Red, t = Green, y = Purple,
-//u = Pink, i = indigo, o = orange, p = random color
-// up arrow = increase stroke size, down arrow = decrease stroke size
-// Box in top right shows current color
-let currX = 0;
-let currY = 0;
-let prevX = 0;
-let prevY = 0;
-let size = 10;
-let col = (0,0,0);
-let co;
-let cl;
-let cr;
+let x = 0;
+let r = document.getElementById('red');
+let g = document.getElementById('green');
+let b = document.getElementById('blue');
+let start = false;
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  //canvas.parent('one');
-  background(255);
-
+  let canvas = createCanvas(800, 600);
+  canvas.parent('here')
+  background(220);
+  rectMode(CENTER);
 }
 
 function draw() {
-  // This would be redundant as mouseX and Y are the current position.
-  // This is intended to demonstate the method intuitively.
-  currX = mouseX;
-  currY = mouseY;
-// color guide box
-  noStroke();
-  rect(0,0,50,50);
-  fill(col);
-  if (mouseIsPressed){
-  strokeWeight(size)
-  stroke(col);
-  line(prevX, prevY, currX, currY);
-  // console.log("prev: " + prevX + "," + prevY);
-  // console.log("curr: " + currX + "," + currY);
+  console.log(r.value,g.value,b.value);
+  if(start == true){
+    translate(width/2,height/2)
+    let degree = frameCount;
+    let ang = radians(degree);
+    x = x + 1;
+    rotate(sin(ang));
+    noFill()
+    rect(0,0,x,x)
+    if(x == 50){
+      stroke(r.value,g.value,b.value)
+    }
+    if(x > height){
+      noLoop();
+    }
   }
-  // store the current position to prevX and prevY
-  // and they will be used as a previous position in the next frame.
-  prevX = currX;
-  prevY = currY;
- }
-// function to change color with key press
-function keyPressed(){
-  // varriables for random colo
-  let co = (random(0,255));
-  let cl = (random(0,255));
-  let cr = (random(0,255));
-  if(key == 'q'){
-      col = "black"
-    }
-  else if (key == 'w'){
-      col = "white"
-    }
-  else if (key == 'e'){
-      col = "blue"
-    }
-  else if (key == 'r'){
-      col = "red"
-    }
-  else if (key == 't'){
-      col = "green"
-    }
-  else if (key == 'y'){
-      col = "purple"
-    }
-  else if (key == 'u'){
-      col = "pink"
-    }
-  else if (key == 'i'){
-      col = "indigo"
-    }
-  else if (key == 'o'){
-      col = "orange"
-    }
-  else if (key == 'p'){
-    col = color(co,cl,cr)
-  }
-  if(keyCode == UP_ARROW){
-      size = (size + 2)
-    }
-  else if(keyCode == DOWN_ARROW){
-      size = (size - 2)
-  }
-  if(keyCode == BACKSPACE){
-    background(255);
-    noStroke();
-    rect(0,0,50,50);
-    fill(col);
+
 }
+function say(fun){
+  console.log(fun);
+  if(fun = 1){
+    start = true
+  }
+  else{
+    start = false;
+  }
 }

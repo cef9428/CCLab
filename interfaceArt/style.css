@@ -1,6 +1,7 @@
 body{
-  background: dimgrey;
+  background: black;
   text-align: center;
+  color: orange;
   /* animation: backgroundFade 5s infinite; */
 }
 @keyframes backgroundFade {
@@ -10,7 +11,6 @@ body{
 }
 .big{
   font-size: 50px;
-  color: blue;
 }
 .flexible{
   /* height: 800px; */
@@ -18,66 +18,12 @@ body{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-#one{
-  /* margin: auto; */
-  position: relative;
-  background: blue;
-  width: 400px;
-  height: 200px;
+#redText{
+  color: red;
 }
-#two{
-  /* margin: auto; */
-  position: relative;
-  background: red;
-  width: 400px;
-  height: 200px;
+#blueText{
+  color: lightblue;
 }
-#three{
-  /* margin: auto; */
-  position: relative;
-  background: orange;
-  width: 400px;
-  height: 200px;
-}
-#four{
-  /* margin: auto; */
-  position: relative;
-  background: green;
-  width: 400px;
-  height: 200px;
-}
-#five{
-  /* margin: auto; */
-  position: relative;
-  background: black;
-  width: 400px;
-  height: 200px;
-}
-#six{
-  /* margin: auto; */
-  position: relative;
-  background: white;
-  width: 400px;
-  height: 200px;
-}
-#seven{
-  /* margin: auto; */
-  position: relative;
-  background: pink;
-  width: 400px;
-  height: 200px;
-}
-#eight{
-  /* margin: auto; */
-  position: relative;
-  background: purple;
-  width: 400px;
-  height: 200px;
-}
-#nine{
-  /* margin: auto; */
-  position: relative;
-  background: yellow;
-  width: 400px;
-  height: 200px;
+#greenText{
+  color: green;
 }
