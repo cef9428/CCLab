@@ -28,16 +28,21 @@ function draw(){
       let red = cam.pixels[index+0];
       let green = cam.pixels[index+1];
       let blue = cam.pixels[index+2];
-      if(red<=127.5||green<=127.5||blue<=127.5){
-        red=255;
-        green=255;
-        blue=255;
-      }
-      else if(red>=127.5||green>=127.5||blue>=127.5){
+      if(red>=127.5||green>=127.5||blue>=127.5){
         red=0;
-        green=0;
         blue=0;
+        green=0;
       }
+      // if(red<=127.5||green<=127.5||blue<=127.5){
+      //   red=255;
+      //   green=255;
+      //   blue=255;
+      // }
+      // else if(red>=127.5||green>=127.5||blue>=127.5){
+      //   red=0;
+      //   green=0;
+      //   blue=0;
+      // }
       //let alpha = cam.pixels[index+3];
 
 
