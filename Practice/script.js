@@ -1,5 +1,5 @@
 //based off https://editor.p5js.org/MOQN/sketches/c2oTHwVqd
-let char = [" ","I","1","0","o"];
+let char = [" ","1","0","I","o"];
 
 let img;
 let cam;
@@ -30,7 +30,7 @@ function draw() {
       let avg = (red + green + blue) / 3;
 
       let bCode = floor(
-        constrain(map(avg, 0, 255, 0, char.length), 0, char.length - 2)
+        map(avg, 0, 255, 0, char.length)
       );
       // let a = sliderR.value;
       // let c = sliderG.value;
