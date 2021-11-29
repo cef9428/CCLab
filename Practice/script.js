@@ -1,4 +1,3 @@
-//based off https://editor.p5js.org/MOQN/sketches/c2oTHwVqd
 let char = [" ","1","0","I","o"];
 
 let img;
@@ -32,9 +31,6 @@ function draw() {
       let bCode = floor(
         map(avg, 0, 255, 0, char.length)
       );
-      // let a = sliderR.value;
-      // let c = sliderG.value;
-      // let d = sliderB.value;
       fill(0,255,0);
       text(char[bCode], x, y);
     }
