@@ -55,6 +55,21 @@ body{
   display: flex;
   justify-content: space-between;
 }
+#dback{
+  background-color: #003459;
+  color: white;
+}
+.dandT{
+  width: 50%;
+  margin: auto;
+}
+.dnav{
+  background: #007EA7;
+}
+.sizing{
+  width: 50%;
+  margin: auto;
+}
 #navigation{
   width: 100%;
   display: flex;
