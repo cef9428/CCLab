@@ -18,6 +18,9 @@ body{
   margin: auto;
   color: white;
 }
+.dark{
+  color: black;
+}
 .ahh{
   color: white;
 }
@@ -70,11 +73,25 @@ body{
   width: 50%;
   margin: auto;
 }
+.bnav{
+  color: black;
+  background: black;
+}
+#first{
+  color: black;
+  background: black;
+}
+#second{
+
+}
+#three{
+
+}
 #navigation{
   width: 100%;
   display: flex;
   justify-content: space-around;
-  color: #00D4FF;
+  /* color: #00D4FF; */
   list-style: none;
 }
 #cover{
