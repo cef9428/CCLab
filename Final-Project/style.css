@@ -60,6 +60,7 @@ body{
   display: flex;
   justify-content: space-around;
   color: #00D4FF;
+  list-style: none;
 }
 #cover{
   z-index: 1;

@@ -4,6 +4,7 @@ let newArray=[];
 let sca;
 let sa;
 let s;
+let l=0;
 function setup(){
 
 
@@ -19,14 +20,25 @@ function draw(){
   //scra.addEventListener("mouseover",woo);
 }
 function myfunc(){
-  for(let i=0;i<me.length;i++){
+  if(l<1){
+    l++;
+    for(let i=0;i<me.length;i++){
     let f = floor(random(0,me.length));
     newArray.push(me[f]);
+    }
+    sa=document.getElementById("fu").textContent=newArray.join('');
+    console.log(scra);
   }
-  sa=document.getElementById("fu").textContent=newArray.join('');
+  else{
+    console.log('no');
+  }
 }
 function myfunc2(){
-  sa.textContent=scra;
+  //alert('help');
+    sa=document.getElementById("fu").textContent=scra.toString();
+  // else{
+  //   console.log('no');
+  // }
 
 }
 
